@@ -1660,7 +1660,7 @@ function getUrlParameters() {
 // Function to fetch data from Google Apps Script
 async function fetchProductData(salesOrderNo, itemNo) {
     // 使用现有的GAS 1 web app URL
-    const gasWebAppUrl = 'https://script.google.com/macros/s/AKfycbxiai_Z57GpnMifiwT90ByYj62pRemZLOzHZIRGbukKnhjx12Ed_EBUbF6cb_XFF6bs/exec';
+    const gasWebAppUrl = 'https://script.google.com/macros/s/AKfycbzs3VLkvG0ObMPF3fNDEtWUrGubK0YvO9zHsbyRJFyqFSwnlnEW3YbJtIRTh9hft_NL/exec';
     
     const response = await fetch(`${gasWebAppUrl}?salesOrderNo=${encodeURIComponent(salesOrderNo)}&itemNo=${encodeURIComponent(itemNo)}`);
     
@@ -1675,7 +1675,7 @@ async function fetchProductData(salesOrderNo, itemNo) {
 async function fetchLastUserData(salesOrderNo, itemNo) {
     try {
         // 使用GAS Web App的getLastUser参数
-        const gasWebAppUrl = 'https://script.google.com/macros/s/AKfycbxiai_Z57GpnMifiwT90ByYj62pRemZLOzHZIRGbukKnhjx12Ed_EBUbF6cb_XFF6bs/exec';
+        const gasWebAppUrl = 'https://script.google.com/macros/s/AKfycbzs3VLkvG0ObMPF3fNDEtWUrGubK0YvO9zHsbyRJFyqFSwnlnEW3YbJtIRTh9hft_NL/exec';
         
         const response = await fetch(`${gasWebAppUrl}?salesOrderNo=${encodeURIComponent(salesOrderNo)}&itemNo=${encodeURIComponent(itemNo)}&getLastUser=true`);
         
@@ -2311,7 +2311,7 @@ const QC_QUESTIONS = [
 ];
 
 // GAS Web App URL for submitting QC data
-const GAS_QC_SUBMIT_URL = 'https://script.google.com/macros/s/AKfycbxiai_Z57GpnMifiwT90ByYj62pRemZLOzHZIRGbukKnhjx12Ed_EBUbF6cb_XFF6bs/exec';
+const GAS_QC_SUBMIT_URL = 'https://script.google.com/macros/s/AKfycbzs3VLkvG0ObMPF3fNDEtWUrGubK0YvO9zHsbyRJFyqFSwnlnEW3YbJtIRTh9hft_NL/exec';
 
 // 卡片内容和iframe数据
 const cardContents = [
